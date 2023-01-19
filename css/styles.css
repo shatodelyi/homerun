@@ -1,0 +1,101 @@
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #0e1016;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 110px;
+  letter-spacing: 2px;
+  color: rgba(14, 16, 22, 0.95);
+}
+
+.btn {
+  font-size: 18px;
+  height: 100%;
+  color: #fff;
+  background-color: #09f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.container--sm {
+  max-width: 1240px;
+}
+
+.container--lg {
+  max-width: 1360px;
+}
+
+/* header */
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 94px;
+  padding: 20px 40px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 26px;
+  height: 100%;
+}
+
+.list-part {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  color: #141414;
+}
+
+.list-part:first-child {
+  margin: 0;
+}
+
+.menu-user {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.user-login {
+  width: 94px;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #f8f4f4;
+  border-radius: 8px;
+}
+
+.user-trial {
+  width: 153px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+/* main */
+main {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+}
