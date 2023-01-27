@@ -25,7 +25,8 @@ a {
   text-decoration: none;
 }
 
-.label {
+.label::after {
+  content: "new";
   display: inline-block;
   font-size: 13px;
   padding: 2px 8px;
@@ -412,7 +413,7 @@ main {
   text-align: center;
 }
 
-.templates-label {
+.templates-label::after {
   font-size: 17px;
   padding: 8px 15px;
   border-radius: 20px;
@@ -476,4 +477,43 @@ main {
   color: rgba(14, 16, 22, 0.95);
   font-size: 20px;
   line-height: 28px;
+}
+
+/* startTrial */
+.content-startTrial {
+  padding: 60px 0px 50px;
+  width: 100%;
+  background: #3ca9ff;
+  color: #fff;
+}
+
+.startTrial-title {
+  margin-top: 15px;
+  font-size: 57px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.startTrial-btn {
+  margin-top: 15px;
+  background: #0e1016;
+}
+
+.startTrial-list {
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+}
+
+.startTrial-list-item {
+  position: relative;
+}
+
+.startTrial-list-item::before {
+  position: absolute;
+  left: -17px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "\2714";
 }
