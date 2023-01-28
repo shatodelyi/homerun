@@ -2,6 +2,7 @@ body {
   font-family: "Roboto";
   font-weight: 400;
   color: #0e1016;
+  padding-bottom: 60px;
 }
 
 .btn {
@@ -104,7 +105,7 @@ a {
 
 /* main */
 main {
-  padding: 16px 60px 60px 60px;
+  padding: 16px 60px 40px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -516,4 +517,130 @@ main {
   top: 50%;
   transform: translateY(-50%);
   content: "\2714";
+}
+
+.footer-container {
+  margin: 0 auto;
+  padding: 0px 40px 40px;
+  background: rgba(0, 0, 0, 0.95);
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+a {
+  display: block;
+  color: #778291;
+}
+
+.footer-head {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.footer-content {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer-content-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 20px;
+}
+
+.footer-content-item:nth-child(odd) {
+  min-width: 222px;
+}
+
+.footer-content-item:nth-child(even) {
+  min-width: 334px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-title-indent {
+  margin-top: 30px;
+}
+
+.footer-content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 28px;
+}
+
+.footer-list-hire {
+  color: #0c9f64;
+}
+
+.footer-list-create {
+  color: #fec104;
+}
+
+.footer-label-guides::after {
+  height: 23px;
+  line-height: 23px;
+  margin-left: 10px;
+}
+
+.footer-label-about::after {
+  content: "2";
+  background: #fc4945;
+  border-radius: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+.footer-list-indent {
+  margin-top: 50px;
+}
+
+.footer-title-newsletter {
+  margin-top: 50px;
+}
+
+.footer-content-newsletter {
+  display: flex;
+  position: relative;
+  justify-content: end;
+}
+
+.footer-newsletter-item::before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  content: "";
+  height: 40px;
+  width: 256px;
+  background: rgba(119, 130, 145, 0.3);
+  border-radius: 8px 0px 0px 8px;
+}
+
+.footer-newsletter-item {
+  display: inline-block;
+  height: 40px;
+  width: 78px;
+  background: #595d68;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.footer-content-social {
+  margin-top: 5px;
+  display: flex;
+  gap: 8px;
 }
